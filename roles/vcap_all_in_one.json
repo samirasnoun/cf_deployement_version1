@@ -1,0 +1,1 @@
+{"name":"vcap_all_in_one","description":"","json_class":"Chef::Role","default_attributes":{},"override_attributes":{},"chef_type":"role","run_list":["role[nats_server]","role[cloud_controller]","role[cloudfoundry]"],"env_run_lists":{}}

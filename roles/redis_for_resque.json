@@ -1,0 +1,1 @@
+{"name":"redis_for_resque","description":"Cloudfoundry Redis for RESQUE","json_class":"Chef::Role","default_attributes":{},"override_attributes":{},"chef_type":"role","run_list":["recipe[deployment]","recipe[essentials]","recipe[ruby]","recipe[redis]","recipe[redis::resque]"],"env_run_lists":{}}

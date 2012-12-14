@@ -1,0 +1,1 @@
+{"name":"cloud_controller","description":"Cloudfoundry Cloud Controller","json_class":"Chef::Role","default_attributes":{},"override_attributes":{},"chef_type":"role","run_list":["recipe[deployment]","recipe[essentials]","recipe[ruby]","recipe[ruby::ruby18]","recipe[ccdb]","recipe[cloud_controller]"],"env_run_lists":{}}

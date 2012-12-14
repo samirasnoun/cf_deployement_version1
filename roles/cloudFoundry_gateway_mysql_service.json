@@ -1,0 +1,1 @@
+{"name":"cloudFoundry_gateway_mysql_service","description":"","json_class":"Chef::Role","default_attributes":{},"override_attributes":{},"chef_type":"role","run_list":["recipe[cloudfoundry-mysql-service::gateway]","recipe[cloudfoundry-mysql-service::node]","recipe[cloudfoundry-mysql-service]"],"env_run_lists":{}}

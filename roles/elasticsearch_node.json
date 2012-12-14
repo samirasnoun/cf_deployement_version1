@@ -1,0 +1,1 @@
+{"name":"elasticsearch_node","description":"Elasticsearch service node","json_class":"Chef::Role","default_attributes":{},"override_attributes":{},"chef_type":"role","run_list":["recipe[deployment]","recipe[essentials]","recipe[ruby]","recipe[java]","recipe[elasticsearch]","recipe[elasticsearch::node]"],"env_run_lists":{}}

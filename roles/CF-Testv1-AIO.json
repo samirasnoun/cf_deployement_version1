@@ -1,0 +1,1 @@
+{"name":"CF-Testv1-AIO","description":"","json_class":"Chef::Role","default_attributes":{},"override_attributes":{},"chef_type":"role","run_list":["role[cloudfoundry_nats_server]","role[cloudfoundry_health_manager]","role[cloudfoundry_dea_ruby]","role[cloudfoundry_controller]","recipe[cloudfoundry-router]"],"env_run_lists":{}}

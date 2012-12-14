@@ -1,0 +1,43 @@
+#
+# Cookbook Name:: cloudfoundry-msyql-service
+# Recipe:: default
+#
+# Copyright 2012, Trotter Cashion
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+
+if Chef::Config[:solo]
+   Chef::Log.warn("This recipe uses search. Chef Solo does not support search.")
+else 
+
+  m_nodes = search(:node, "role:cloudfoundry_controller")
+  m_node = m_nodes.first
+  
+  node.set[:cloudfoundry_mysql_service][:searched_data][:cloudfoundry_cloud_controller][:server][:api_uri] = m_node.cloudfoundry_cloud_controller.server.api_uri
+  node.set[:cloudfoundry_mysql_service][:searched_data][:cloudfoundry_common][:service_token] = m_node.cloudfoundry_common.service_token
+  
+  n_nodes = search(:node, "role:cloudfoundry_nats_server")
+  n_node = n_nodes.first
+  
+  node.set[:cloudfoundry_mysql_service][:searched_data][:nats_server][:host] = n_node.ipaddress  
+  node.set[:cloudfoundry_mysql_service][:searched_data][:nats_server][:user] = n_node.nats_server.user
+  node.set[:cloudfoundry_mysql_service][:searched_data][:nats_server][:password] = n_node.nats_server.password
+  node.set[:cloudfoundry_mysql_service][:searched_data][:nats_server][:port] = n_node.nats_server.port
+
+end 
+
+
+include_recipe "cloudfoundry-mysql-service::gateway"
+include_recipe "cloudfoundry-mysql-service::node"

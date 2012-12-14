@@ -1,0 +1,1 @@
+{"name":"ccdb","description":"Cloud Controller Database for apps","json_class":"Chef::Role","default_attributes":{"services":["postgresql"],"service_components":["postgresql_node","postgresql_backup"]},"override_attributes":{},"chef_type":"role","run_list":["recipe[deployment]","recipe[postgresql]","recipe[ccdb]"],"env_run_lists":{}}

@@ -1,0 +1,1 @@
+{"name":"Redis","description":"Redis key value store for apps","json_class":"Chef::Role","default_attributes":{},"override_attributes":{},"chef_type":"role","run_list":["recipe[deployment]","recipe[essentials]","recipe[ruby]","recipe[redis]","recipe[redis::node]"],"env_run_lists":{}}

@@ -1,0 +1,1 @@
+{"name":"snapshot_manager","description":"Cloudfoundry Snapshot Manager","json_class":"Chef::Role","default_attributes":{},"override_attributes":{},"chef_type":"role","run_list":["recipe[deployment]","recipe[essentials]","recipe[ruby]","recipe[service_lifecycle]","recipe[service_lifecycle::snapshotmanager]"],"env_run_lists":{}}

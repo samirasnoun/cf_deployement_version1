@@ -1,0 +1,1 @@
+{"name":"cloudfoundry-common","description":"","json_class":"Chef::Role","default_attributes":{},"override_attributes":{},"chef_type":"role","run_list":["recipe[cloudfoundry-common]","recipe[cloudfoundry-common::directories]","recipe[cloudfoundry-common::ruby_1_9_2]","recipe[cloudfoundry-common::vcap]"],"env_run_lists":{}}

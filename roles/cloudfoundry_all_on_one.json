@@ -1,0 +1,1 @@
+{"name":"cloudfoundry_all_on_one","description":"","json_class":"Chef::Role","default_attributes":{},"override_attributes":{},"chef_type":"role","run_list":["role[controller-trotter]","role[cloudfoundry_dea_trotter]","role[health_mangaer_trotter]","recipe[cloudfoundry-cloud_controller]","role[nats-trotter]"],"env_run_lists":{}}

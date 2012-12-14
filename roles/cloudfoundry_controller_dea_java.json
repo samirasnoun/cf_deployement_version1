@@ -1,0 +1,1 @@
+{"name":"cloudfoundry_controller_dea_java","description":"","json_class":"Chef::Role","default_attributes":{},"override_attributes":{},"chef_type":"role","run_list":["role[cloudfoundry_controller]","role[cloudfoundry_dea_java]"],"env_run_lists":{}}

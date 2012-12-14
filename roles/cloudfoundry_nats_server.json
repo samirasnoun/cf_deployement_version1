@@ -1,0 +1,1 @@
+{"name":"cloudfoundry_nats_server","description":"","json_class":"Chef::Role","default_attributes":{},"override_attributes":{"nats_server":{"cf_session":{"id":"1","name":"platform CF 1"}}},"chef_type":"role","run_list":["recipe[chef-client]","recipe[nats-server]"],"env_run_lists":{}}

@@ -1,0 +1,1 @@
+{"name":"mongodb","description":"MongoDB","json_class":"Chef::Role","default_attributes":{},"override_attributes":{},"chef_type":"role","run_list":["recipe[deployment]","recipe[essentials]","recipe[ruby]","recipe[mongodb]","recipe[mongodb::node]"],"env_run_lists":{}}

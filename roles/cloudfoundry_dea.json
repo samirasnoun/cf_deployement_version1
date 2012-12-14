@@ -1,0 +1,1 @@
+{"name":"cloudfoundry_dea","description":"","json_class":"Chef::Role","default_attributes":{},"override_attributes":{"cloudfoundry_dea":{"cf_session":{"id":"1","name":"platform CF 1"}}},"chef_type":"role","run_list":["recipe[cloudfoundry-dea]"],"env_run_lists":{}}

@@ -1,0 +1,1 @@
+{"name":"postgresql_gateway","description":"PostgreSQL services gateway","json_class":"Chef::Role","default_attributes":{"services":["postgresql"],"service_components":["postgresql_gateway"]},"override_attributes":{},"chef_type":"role","run_list":["role[services]"],"env_run_lists":{}}

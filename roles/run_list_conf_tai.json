@@ -1,0 +1,1 @@
+{"name":"run_list_conf_tai","description":"","json_class":"Chef::Role","default_attributes":{},"override_attributes":{},"chef_type":"role","run_list":["recipe[tai_logs]","recipe[conf_tai]"],"env_run_lists":{}}

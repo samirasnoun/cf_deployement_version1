@@ -1,0 +1,1 @@
+{"name":"cloudfoundry-node-runtime","description":"","json_class":"Chef::Role","default_attributes":{},"override_attributes":{},"chef_type":"role","run_list":["recipe[cloudfoundry-node-runtime]","recipe[cloudfoundry-node-runtime::framework]"],"env_run_lists":{}}

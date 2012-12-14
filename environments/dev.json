@@ -1,0 +1,1 @@
+{"name":"dev","description":"The development environment","cookbook_versions":{},"json_class":"Chef::Environment","chef_type":"environment","default_attributes":{},"override_attributes":{"hello_app":{"docroot":"/home/vagrant/apps/hello_app","server_name":"hello_app.dev"}}}

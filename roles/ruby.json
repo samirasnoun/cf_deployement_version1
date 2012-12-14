@@ -1,0 +1,1 @@
+{"name":"ruby","description":"Ruby","json_class":"Chef::Role","default_attributes":{"newservice":["rruby"]},"override_attributes":{},"chef_type":"role","run_list":["recipe[deployment]","recipe[essentials]","recipe[ruby::ruby18]","recipe[ruby]"],"env_run_lists":{}}

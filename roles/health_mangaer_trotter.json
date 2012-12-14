@@ -1,0 +1,1 @@
+{"name":"health_mangaer_trotter","description":"","json_class":"Chef::Role","default_attributes":{},"override_attributes":{},"chef_type":"role","run_list":["recipe[cloudfoundry-health_manager-cookbook]"],"env_run_lists":{}}

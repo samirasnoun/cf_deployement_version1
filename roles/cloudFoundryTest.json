@@ -1,0 +1,1 @@
+{"name":"cloudFoundryTest","description":"","json_class":"Chef::Role","default_attributes":{},"override_attributes":{},"chef_type":"role","run_list":["recipe[mongodb::gateway]","recipe[health_manager]","recipe[redis::gateway]","recipe[router]","recipe[mongodb::node]","recipe[redis::node]","recipe[cloud_controller]"],"env_run_lists":{}}
